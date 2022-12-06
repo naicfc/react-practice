@@ -23,6 +23,10 @@ function App() {
           setup="How do you follw Will Smith in the snow?"
           punchline="You follow the fresh prints"
           />
+          <Joke 
+          setup="What did the ocean say to the beach?"
+          punchline="Nothing, it just waved"
+          />
         </div>
       </main>
     </div>
