@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Joke from './components/Joke';
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header>
+        <img src={logo} className="App-logo" alt="logo"/>
       </header>
+      <main>
+        <div>
+          <Joke 
+          setup="What do you call a cow that can do maths?"
+          punchline="A cowculator"
+          />
+          <Joke 
+          setup="What is faster than a calculator?"
+          punchline="A calcuNOW"
+          />
+          <Joke 
+          setup="How do you follw Will Smith in the snow?"
+          punchline="You follow the fresh prints"
+          />
+        </div>
+      </main>
     </div>
   );
 }
